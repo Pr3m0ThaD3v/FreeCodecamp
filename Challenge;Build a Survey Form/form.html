@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <!-- h1 and paragraph -->
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, culpa.</p>
+    
+    <!-- Survey Form -->
+    <form action="" id="survey-form">
+        <fieldset>
+            <!-- Name -->
+            <label class="inline" for="name" id="name-label">Enter Your First Name: <input type="text" name="name" id="name" placeholder="First Name:" required></label>
+            <label class="inline" for="" name="name-label">Enter Your Last Name: <input type="text" name="name" placeholder="Last Name" required></label>
+            <!-- Email-->
+            <label class="inline" for="email" id="email-label">Email <input type="email" name="email" id="email" placeholder="Email"
+                    required></label>
+            <!-- Number -->
+            <label class="inline" for="number" id="number-label">Contact <input type="number" name="phone-number" id="number"
+                   min="0" max="9" pattern="[^\d{3}-\d{3}-\d{4}$]"  placeholder="Cell or Home" required></label>
+        </fieldset>
+
+        <!-- Drop-Down -->
+        <fieldset>
+            Which crypto are you invested in?
+            <label for="drop-down">
+                <select name="" id="dropdown">
+                    <option value="">Select One</option>
+                    <option value="1">Bitcoin</option>
+                    <option value="2">Ethereum</option>
+                    <option value="3">Litecoin</option>
+                    <option value="4">DogeCoin</option>
+                </select>
+
+            </label>
+        </fieldset>
+        <!-- Radio -->
+        <fieldset>
+            Which platform do you prefer to trade crypto on?
+            <label for="radio">
+                <input value="1" type="radio" name="radio" id="radio"> RobinHood
+                <input value="2" type="radio" name="radio" id="radio"> Gemini
+                <input value="3" type="radio" name="radio" id="radio"> Coinbase
+                <input value="4" type="radio" name="radio" id="radio"> Exodus
+            </label>
+        </fieldset>
+
+        <!-- Checkbox -->
+        <fieldset>
+            <label for="checkbox">
+                <input value="1" type="checkbox" name="checkbox" id=""> Day Trader
+                <input value="2" type="checkbox" name="checkbox" id=""> Swing Trader
+                <input value="3" type="checkbox" name="checkbox" id=""> Scalper
+                <input value="4" type="checkbox" name="" id=""> Hold On For Dear Life (HODL)
+            </label>
+        </fieldset>
+
+        <!-- Text-Area -->
+        <label for="text-area">
+            <textarea name="feedback" id="feedback" cols="30" rows="3"
+                placeholder="Tell Us What You Think About This Survey."></textarea>
+        </label>
+
+        <!--Button-->
+        <input id="submit" type="submit" value="Submit">
+    
+        <label class="terms-link" id="terms" for="terms">
+            <a href="#">Terms And Conditions</a>
+        </label>
+    </form>
+    
+
+    
+
+
+</body>
+
+</html>

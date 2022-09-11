@@ -1,0 +1,56 @@
+/** Universal settings **/
+* {
+    box-sizing: border-box;
+}
+
+body { 
+    /* remove margin set font and bkground color*/
+    margin: 0;
+    font-family: sans-serif;
+    background-color:#f5f6f7;
+}
+
+/* Image Sizing*/
+.gallery img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;/* fill image to im container, maintain aspect ratio*/
+    border-radius: 10px; /*Smooth edges of img*/
+}
+
+
+.header {
+/* Align header to center transform all text to uppercase
+header element gets border-bottom, background color*/
+    text-align:center;
+    text-transform: uppercase;
+    padding: 32px;
+    background: #0a0a23;
+    color: #fff;
+    border-bottom: 4px solid #fdb347;
+}
+
+/* Flex Container*/
+.gallery {
+    /* Any direct children 
+    of a flex container are called flex items.*/
+    display: flex; 
+    flex-direction: row; /*Alignment property based on flexbox axis
+    row creates a vertical axis*/
+    flex-wrap: wrap; /* Like word wrap for text*/
+    justify-content:center ; /*Center content to flexbox main axis*/
+    align-items: center;
+    
+    padding: 20px 10px; /*create space around the container*/
+    
+    /*Re center the container*/
+    margin: 0 auto; 
+    max-width: 1400px;
+    gap: 16px;/* set gap between flexbox rows and columns*/
+}
+
+.gallery::after {
+    content: "";
+    width: 350px;
+}

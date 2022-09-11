@@ -1,0 +1,90 @@
+body {
+    font-size: 16px;
+    height: 100vh;
+    color: #ffff;
+    width: 100%;
+    background-image: url(https://wallpaperaccess.com/full/3648426.jpg);
+    background-size:cover;
+
+}
+
+body {}
+
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+}
+
+fieldset {
+    border: none;
+    padding: 2rem 0 2rem 0;
+    border-bottom: 3px solid rgba(155, 155, 155, 0.509);
+}
+
+form {
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 300px;
+    width: 60vw;
+    padding: 0 0 2em 0;
+    background-color: rgba(0, 0, 96, 0.483)
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+fieldset:last-of-type{
+    border-bottom: none;
+}
+
+.inline{
+    width:100%;
+    margin: 10px 0 0 0;
+    min-height: 2em;
+}
+
+textarea {
+    width: 98%;
+    margin: 10px 0 0 0;
+    min-height: 2em;
+}
+
+input, textarea{
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0, );
+    color: rbg(255, 255, 255);
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align:middle;
+}
+
+#submit{
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    height: 2rem;
+    font-size: 1.1rem;
+    background-color: rgba(52, 162, 240, 0.533);
+    color: #ffff;
+    border-color: rgb(255,255,255);
+    margin: 1em auto;
+    min-width: 300px;
+
+}
+
+#terms, a {
+    
+    color:rgb(255,255,255);
+    text-align: center; 
+    margin: 0 auto;
+    text-decoration:none;   
+}
+
+#terms a:hover{
+    color: rgb(151, 238, 255);
+}
