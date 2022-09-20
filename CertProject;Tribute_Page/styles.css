@@ -1,13 +1,23 @@
+*m {
+    margin:0;
+    padding: 0;
+
+}
+
 html {
     
-    color: aliceblue;
+    color: white;
 }
 
 body {
     background-color:#181818;
     background-image: url(images/JokerHeath-Ledger.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
+
+}
 header {
     display: flex;
     flex-wrap: nowrap;
@@ -15,23 +25,32 @@ header {
     align-items:center;
 }
 
-#title {
-    text-align: center;
-    font-family:'Bebas Neue', cursive;
-    letter-spacing: 0.2em;
-}
-
 main {
-    background-color:#323232a0;
+    background-color:#32323251;
     margin:50px 150px;
     padding: 20px 20px;
     line-height: 1.5em;
     border-radius:0.80%;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     
+}
+a{
+    
+}
+#title {
+    text-align: center;
+    font-family:'Bebas Neue', cursive;
+    letter-spacing: 0.2em;
+    padding-bottom: 5em;
 }
 
 #description {
     text-align: center;
+    
 }
 
 #tribute-info {
@@ -47,5 +66,23 @@ main {
 
 #img-div > img {
     width: 500px;
-    height: 300px;
+    height: auto;
+}
+
+#image {
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+    padding: 20px 0;
+    display:block;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* media query*/
+
+@media screen and (max-width: 600px){
+    body {
+        background-image: url(images/JokerHeath-Ledger.jpg);
+    }
 }
