@@ -1,4 +1,4 @@
-*m {
+* {
     margin:0;
     padding: 0;
 
@@ -14,24 +14,27 @@ body {
     background-image: url(images/JokerHeath-Ledger.jpg);
     background-position: center center;
     background-repeat: no-repeat;
+    
 }
 
 
-}
 header {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     align-items:center;
+    min-width: 300px;
+    
 }
 
 main {
     background-color:#32323251;
-    margin:50px 150px;
+    margin:50px auto;
     padding: 20px 20px;
     line-height: 1.5em;
     border-radius:0.80%;
     max-width: 100%;
+    min-width:300px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -45,7 +48,8 @@ a{
     text-align: center;
     font-family:'Bebas Neue', cursive;
     letter-spacing: 0.2em;
-    padding-bottom: 5em;
+    padding-bottom: 3em;
+    padding-top: 1.5em;
 }
 
 #description {
@@ -73,10 +77,10 @@ a{
     margin: auto;
     max-width: 100%;
     height: auto;
+    width: auto;
     padding: 20px 0;
     display:block;
-    flex-direction: column;
-    justify-content: center;
+    
 }
 
 /* media query*/
@@ -84,5 +88,52 @@ a{
 @media screen and (max-width: 600px){
     body {
         background-image: url(images/JokerHeath-Ledger.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
     }
 }
+
+@media screen and (max-width: 500px){
+    body {
+        background-image: url(images/JokerHeath-Ledger.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (min-width: 400px){
+    body {
+        background-image: url(images/JokerHeath-Ledger.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (min-width: 300px){
+    body {
+        background-image: url(images/JokerHeath-Ledger.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+}
+/*footer*/
+
+#container {
+    display: flex;
+    justify-content: center center;
+    justify-content: space-evenly;
+    width:auto;
+    height:auto;
+    padding:0 200px;
+    margin-bottom: 9em;
+    padding-bottom: 5em;
+}
+
+.photo-section, img {
+    align-items: center;
+    width:10em;
+    height:10em;
+    margin:auto;
+
+}
+
