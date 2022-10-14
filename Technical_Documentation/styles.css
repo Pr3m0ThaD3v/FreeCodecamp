@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    text-align: center;
+}
+
+#navbar header {
+    font-size: 3.5em;
+}
+
+/*main section*/
+
+/* Main-doc main area */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: center;
+
+    border-top-right-radius: 1%;
+    border-top-left-radius: 1%;
+    border-bottom-left-radius: 1%;
+    border-bottom-right-radius: 1%;
+    padding: 20px 40px 0 40px;
+    width: -moz-fit-width;
+    width: fit-content;
+    height: auto;
+
+}
+
+#main-doc {
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+#main-doc p {
+    text-align: left;
+    margin: 15px;
+}
+
+#main-doc header {
+    margin-bottom: ;
+}
+
+code {
+    background-color: #D8D8D8;
+}
+
+#main-doc li {
+    margin: 25px 0 35px 0;
+
+}
+
+#main-doc header {
+    font-size: 1.5em;
+}
+
+#main-section ul {
+    padding-left: 0;
+}
+
+/*navbar*/
+#navbar header {
+    margin: ;
+    padding-top: 1rem;
+}
+
+#navbar {
+    background-color: #2b51da;
+    display: block;
+    padding-bottom: 15px;
+}
+
+.div-a
+
+/* flexbox container*/
+    {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    background-color: #2b51da;
+    margin-left: 20rem;
+    margin-right: 20rem;
+
+}
+
+/*children of flexbox*/
+.div-a a {
+    color: #fff;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+
+.div-a a:hover {
+    color: rgb(109, 219, 247);
+}
+
+/* What you should already know section */
+
+#What_you_should_already_know p {
+    text-align: center;
+
+}
+
+/**/
+
+@media (min-width:350px) and (max-width:1080px) {
+    main {}
+}
